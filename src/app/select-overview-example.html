@@ -1,0 +1,11 @@
+<mat-form-field>
+	<mat-select placeholder="Activité favorite" [(value)]="activiteFavorite" multiple>
+		<mat-optgroup *ngFor="let groupe of groupeActivites" [label]="groupe.nom">
+			<mat-option *ngFor="let activite of groupe.activites" [value]="activite">
+				{{ activite }}
+			</mat-option>
+		</mat-optgroup>
+	</mat-select>
+</mat-form-field>
+
+<div>Activité favorite : {{activiteFavorite}}</div>
