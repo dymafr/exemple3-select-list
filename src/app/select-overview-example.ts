@@ -1,20 +1,20 @@
-import { Component } from "@angular/core";
+import { Component } from '@angular/core';
 
 @Component({
-  selector: "select-overview-example",
-  templateUrl: "select-overview-example.html"
+  selector: 'select-overview-example',
+  templateUrl: 'select-overview-example.html',
 })
 export class SelectOverviewExample {
-  public activiteFavorite: string;
+  public activiteFavorite = '';
 
   groupeActivites = [
     {
-      nom: "Sportive",
-      activites: ["Basket", "Foot", "Tennis", "Course", "Natation"]
+      nom: 'Sportive',
+      activites: ['Basket', 'Foot', 'Tennis', 'Course', 'Natation'],
     },
     {
-      nom: "Reposante",
-      activites: ["Jeux de sociétés", "Film", "Jeux vidéos", "Sieste"]
-    }
+      nom: 'Reposante',
+      activites: ['Jeux de sociétés', 'Film', 'Jeux vidéos', 'Sieste'],
+    },
   ];
 }
