@@ -1,10 +1,18 @@
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+/* Add application styles & imports to this file! */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
-body { 
-  font-family: Roboto, Arial, sans-serif;
+html,
+body {
+  height: 100%;
+}
+body {
   margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
 }
 
-.basic-container {
-  padding: 5px;
+.container {
+  max-width: 1200px;
+  display: block;
+  margin: auto;
+  padding: 20px;
 }
